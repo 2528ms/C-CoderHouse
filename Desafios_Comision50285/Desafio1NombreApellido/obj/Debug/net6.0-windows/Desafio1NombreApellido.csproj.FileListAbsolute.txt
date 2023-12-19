@@ -1,0 +1,17 @@
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio1NombreApellido\bin\Debug\net6.0-windows\Desafio1NombreApellido.exe
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio1NombreApellido\bin\Debug\net6.0-windows\Desafio1NombreApellido.deps.json
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio1NombreApellido\bin\Debug\net6.0-windows\Desafio1NombreApellido.runtimeconfig.json
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio1NombreApellido\bin\Debug\net6.0-windows\Desafio1NombreApellido.dll
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio1NombreApellido\bin\Debug\net6.0-windows\Desafio1NombreApellido.pdb
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio1NombreApellido\obj\Debug\net6.0-windows\Desafio1NombreApellido.Form1.resources
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio1NombreApellido\obj\Debug\net6.0-windows\Desafio1NombreApellido.csproj.GenerateResource.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio1NombreApellido\obj\Debug\net6.0-windows\Desafio1NombreApellido.GeneratedMSBuildEditorConfig.editorconfig
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio1NombreApellido\obj\Debug\net6.0-windows\Desafio1NombreApellido.AssemblyInfoInputs.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio1NombreApellido\obj\Debug\net6.0-windows\Desafio1NombreApellido.AssemblyInfo.cs
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio1NombreApellido\obj\Debug\net6.0-windows\Desafio1NombreApellido.csproj.CoreCompileInputs.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio1NombreApellido\obj\Debug\net6.0-windows\Desafio1NombreApellido.sourcelink.json
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio1NombreApellido\obj\Debug\net6.0-windows\Desafio1NombreApellido.dll
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio1NombreApellido\obj\Debug\net6.0-windows\refint\Desafio1NombreApellido.dll
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio1NombreApellido\obj\Debug\net6.0-windows\Desafio1NombreApellido.pdb
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio1NombreApellido\obj\Debug\net6.0-windows\Desafio1NombreApellido.genruntimeconfig.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio1NombreApellido\obj\Debug\net6.0-windows\ref\Desafio1NombreApellido.dll
