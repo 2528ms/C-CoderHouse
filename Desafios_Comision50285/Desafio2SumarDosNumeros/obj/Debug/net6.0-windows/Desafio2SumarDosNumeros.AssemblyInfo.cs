@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Desafio1NombreApellido")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Desafio2SumarDosNumeros")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("Desafio1NombreApellido")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Desafio1NombreApellido")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+de54ec607f5f1bef2b63413d412abd95148890a5")]
+[assembly: System.Reflection.AssemblyProductAttribute("Desafio2SumarDosNumeros")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Desafio2SumarDosNumeros")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]

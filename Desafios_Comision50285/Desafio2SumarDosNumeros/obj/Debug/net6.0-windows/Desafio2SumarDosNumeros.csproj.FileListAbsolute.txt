@@ -1,0 +1,17 @@
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio2SumarDosNumeros\bin\Debug\net6.0-windows\Desafio2SumarDosNumeros.exe
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio2SumarDosNumeros\bin\Debug\net6.0-windows\Desafio2SumarDosNumeros.deps.json
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio2SumarDosNumeros\bin\Debug\net6.0-windows\Desafio2SumarDosNumeros.runtimeconfig.json
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio2SumarDosNumeros\bin\Debug\net6.0-windows\Desafio2SumarDosNumeros.dll
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio2SumarDosNumeros\bin\Debug\net6.0-windows\Desafio2SumarDosNumeros.pdb
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio2SumarDosNumeros\obj\Debug\net6.0-windows\Desafio2SumarDosNumeros.Form1.resources
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio2SumarDosNumeros\obj\Debug\net6.0-windows\Desafio2SumarDosNumeros.csproj.GenerateResource.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio2SumarDosNumeros\obj\Debug\net6.0-windows\Desafio2SumarDosNumeros.GeneratedMSBuildEditorConfig.editorconfig
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio2SumarDosNumeros\obj\Debug\net6.0-windows\Desafio2SumarDosNumeros.AssemblyInfoInputs.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio2SumarDosNumeros\obj\Debug\net6.0-windows\Desafio2SumarDosNumeros.AssemblyInfo.cs
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio2SumarDosNumeros\obj\Debug\net6.0-windows\Desafio2SumarDosNumeros.csproj.CoreCompileInputs.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio2SumarDosNumeros\obj\Debug\net6.0-windows\Desafio2SumarDosNumeros.sourcelink.json
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio2SumarDosNumeros\obj\Debug\net6.0-windows\Desafio2SumarDosNumeros.dll
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio2SumarDosNumeros\obj\Debug\net6.0-windows\refint\Desafio2SumarDosNumeros.dll
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio2SumarDosNumeros\obj\Debug\net6.0-windows\Desafio2SumarDosNumeros.pdb
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio2SumarDosNumeros\obj\Debug\net6.0-windows\Desafio2SumarDosNumeros.genruntimeconfig.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio2SumarDosNumeros\obj\Debug\net6.0-windows\ref\Desafio2SumarDosNumeros.dll
