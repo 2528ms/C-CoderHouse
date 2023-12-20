@@ -1,0 +1,17 @@
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio_Clase2_Universidad\bin\Debug\net6.0-windows\Desafio_Clase2_Universidad.exe
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio_Clase2_Universidad\bin\Debug\net6.0-windows\Desafio_Clase2_Universidad.deps.json
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio_Clase2_Universidad\bin\Debug\net6.0-windows\Desafio_Clase2_Universidad.runtimeconfig.json
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio_Clase2_Universidad\bin\Debug\net6.0-windows\Desafio_Clase2_Universidad.dll
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio_Clase2_Universidad\bin\Debug\net6.0-windows\Desafio_Clase2_Universidad.pdb
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio_Clase2_Universidad\obj\Debug\net6.0-windows\Desafio_Clase2_Universidad.Form1.resources
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio_Clase2_Universidad\obj\Debug\net6.0-windows\Desafio_Clase2_Universidad.csproj.GenerateResource.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio_Clase2_Universidad\obj\Debug\net6.0-windows\Desafio_Clase2_Universidad.GeneratedMSBuildEditorConfig.editorconfig
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio_Clase2_Universidad\obj\Debug\net6.0-windows\Desafio_Clase2_Universidad.AssemblyInfoInputs.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio_Clase2_Universidad\obj\Debug\net6.0-windows\Desafio_Clase2_Universidad.AssemblyInfo.cs
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio_Clase2_Universidad\obj\Debug\net6.0-windows\Desafio_Clase2_Universidad.csproj.CoreCompileInputs.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio_Clase2_Universidad\obj\Debug\net6.0-windows\Desafio_Clase2_Universidad.sourcelink.json
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio_Clase2_Universidad\obj\Debug\net6.0-windows\Desafio_Clase2_Universidad.dll
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio_Clase2_Universidad\obj\Debug\net6.0-windows\refint\Desafio_Clase2_Universidad.dll
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio_Clase2_Universidad\obj\Debug\net6.0-windows\Desafio_Clase2_Universidad.pdb
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio_Clase2_Universidad\obj\Debug\net6.0-windows\Desafio_Clase2_Universidad.genruntimeconfig.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Desafio_Clase2_Universidad\obj\Debug\net6.0-windows\ref\Desafio_Clase2_Universidad.dll
