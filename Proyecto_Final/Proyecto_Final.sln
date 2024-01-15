@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entidades", "Entidades", "{25E73342-9107-4977-9A17-A411DF5044D7}"
+	ProjectSection(SolutionItems) = preProject
+		Producto.cs = Producto.cs
+		ProductoVendido.cs = ProductoVendido.cs
+		Usuario.cs = Usuario.cs
+		Venta.cs = Venta.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78730F3E-E58E-4FD9-98BA-FA4FB2FBD958}
+	EndGlobalSection
+EndGlobal
