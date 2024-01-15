@@ -1,0 +1,17 @@
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\ClaseUsuarioPOO\bin\Debug\net6.0-windows\ClaseUsuarioPOO.exe
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\ClaseUsuarioPOO\bin\Debug\net6.0-windows\ClaseUsuarioPOO.deps.json
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\ClaseUsuarioPOO\bin\Debug\net6.0-windows\ClaseUsuarioPOO.runtimeconfig.json
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\ClaseUsuarioPOO\bin\Debug\net6.0-windows\ClaseUsuarioPOO.dll
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\ClaseUsuarioPOO\bin\Debug\net6.0-windows\ClaseUsuarioPOO.pdb
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\ClaseUsuarioPOO\obj\Debug\net6.0-windows\ClaseUsuarioPOO.Form1.resources
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\ClaseUsuarioPOO\obj\Debug\net6.0-windows\ClaseUsuarioPOO.csproj.GenerateResource.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\ClaseUsuarioPOO\obj\Debug\net6.0-windows\ClaseUsuarioPOO.GeneratedMSBuildEditorConfig.editorconfig
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\ClaseUsuarioPOO\obj\Debug\net6.0-windows\ClaseUsuarioPOO.AssemblyInfoInputs.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\ClaseUsuarioPOO\obj\Debug\net6.0-windows\ClaseUsuarioPOO.AssemblyInfo.cs
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\ClaseUsuarioPOO\obj\Debug\net6.0-windows\ClaseUsuarioPOO.csproj.CoreCompileInputs.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\ClaseUsuarioPOO\obj\Debug\net6.0-windows\ClaseUsuarioPOO.sourcelink.json
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\ClaseUsuarioPOO\obj\Debug\net6.0-windows\ClaseUsuarioPOO.dll
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\ClaseUsuarioPOO\obj\Debug\net6.0-windows\refint\ClaseUsuarioPOO.dll
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\ClaseUsuarioPOO\obj\Debug\net6.0-windows\ClaseUsuarioPOO.pdb
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\ClaseUsuarioPOO\obj\Debug\net6.0-windows\ClaseUsuarioPOO.genruntimeconfig.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\ClaseUsuarioPOO\obj\Debug\net6.0-windows\ref\ClaseUsuarioPOO.dll

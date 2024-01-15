@@ -1,0 +1,15 @@
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase5Objetos\bin\Debug\net6.0\Clase5Objetos.exe
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase5Objetos\bin\Debug\net6.0\Clase5Objetos.deps.json
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase5Objetos\bin\Debug\net6.0\Clase5Objetos.runtimeconfig.json
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase5Objetos\bin\Debug\net6.0\Clase5Objetos.dll
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase5Objetos\bin\Debug\net6.0\Clase5Objetos.pdb
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase5Objetos\obj\Debug\net6.0\Clase5Objetos.GeneratedMSBuildEditorConfig.editorconfig
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase5Objetos\obj\Debug\net6.0\Clase5Objetos.AssemblyInfoInputs.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase5Objetos\obj\Debug\net6.0\Clase5Objetos.AssemblyInfo.cs
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase5Objetos\obj\Debug\net6.0\Clase5Objetos.csproj.CoreCompileInputs.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase5Objetos\obj\Debug\net6.0\Clase5Objetos.sourcelink.json
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase5Objetos\obj\Debug\net6.0\Clase5Objetos.dll
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase5Objetos\obj\Debug\net6.0\refint\Clase5Objetos.dll
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase5Objetos\obj\Debug\net6.0\Clase5Objetos.pdb
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase5Objetos\obj\Debug\net6.0\Clase5Objetos.genruntimeconfig.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase5Objetos\obj\Debug\net6.0\ref\Clase5Objetos.dll
