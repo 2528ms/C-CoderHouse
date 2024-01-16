@@ -1,0 +1,2 @@
+Este es el Proyecto Final del curso de C-Sharp brindado por la plataforma Coderhouse, en dicho proyecto se implementaran 
+todos los temas desarrollados durante la cursada
