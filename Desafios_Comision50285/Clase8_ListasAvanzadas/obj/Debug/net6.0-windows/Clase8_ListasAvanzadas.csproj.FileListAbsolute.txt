@@ -1,0 +1,17 @@
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase8_ListasAvanzadas\bin\Debug\net6.0-windows\Clase8_ListasAvanzadas.exe
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase8_ListasAvanzadas\bin\Debug\net6.0-windows\Clase8_ListasAvanzadas.deps.json
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase8_ListasAvanzadas\bin\Debug\net6.0-windows\Clase8_ListasAvanzadas.runtimeconfig.json
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase8_ListasAvanzadas\bin\Debug\net6.0-windows\Clase8_ListasAvanzadas.dll
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase8_ListasAvanzadas\bin\Debug\net6.0-windows\Clase8_ListasAvanzadas.pdb
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase8_ListasAvanzadas\obj\Debug\net6.0-windows\Clase8_ListasAvanzadas.Form1.resources
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase8_ListasAvanzadas\obj\Debug\net6.0-windows\Clase8_ListasAvanzadas.csproj.GenerateResource.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase8_ListasAvanzadas\obj\Debug\net6.0-windows\Clase8_ListasAvanzadas.GeneratedMSBuildEditorConfig.editorconfig
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase8_ListasAvanzadas\obj\Debug\net6.0-windows\Clase8_ListasAvanzadas.AssemblyInfoInputs.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase8_ListasAvanzadas\obj\Debug\net6.0-windows\Clase8_ListasAvanzadas.AssemblyInfo.cs
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase8_ListasAvanzadas\obj\Debug\net6.0-windows\Clase8_ListasAvanzadas.csproj.CoreCompileInputs.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase8_ListasAvanzadas\obj\Debug\net6.0-windows\Clase8_ListasAvanzadas.sourcelink.json
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase8_ListasAvanzadas\obj\Debug\net6.0-windows\Clase8_ListasAvanzadas.dll
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase8_ListasAvanzadas\obj\Debug\net6.0-windows\refint\Clase8_ListasAvanzadas.dll
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase8_ListasAvanzadas\obj\Debug\net6.0-windows\Clase8_ListasAvanzadas.pdb
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase8_ListasAvanzadas\obj\Debug\net6.0-windows\Clase8_ListasAvanzadas.genruntimeconfig.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\Clase8_ListasAvanzadas\obj\Debug\net6.0-windows\ref\Clase8_ListasAvanzadas.dll
