@@ -16,7 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		REDME.txt = REDME.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio2", "Desafio2\Desafio2.csproj", "{E307AB74-6966-484A-B6BB-4DB4336FD205}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio2_ADOnet", "Desafio2\Desafio2_ADOnet.csproj", "{E307AB74-6966-484A-B6BB-4DB4336FD205}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
