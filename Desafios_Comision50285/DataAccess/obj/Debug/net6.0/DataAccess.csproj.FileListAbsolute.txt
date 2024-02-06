@@ -1,0 +1,15 @@
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\DataAccess\bin\Debug\net6.0\DataAccess.runtimeconfig.json
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\DataAccess\bin\Debug\net6.0\DataAccess.dll
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\DataAccess\obj\Debug\net6.0\DataAccess.sourcelink.json
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\DataAccess\obj\Debug\net6.0\DataAccess.dll
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\DataAccess\obj\Debug\net6.0\DataAccess.genruntimeconfig.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Desafios_Comision50285\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
