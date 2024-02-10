@@ -1,0 +1,10 @@
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Proyecto_Final\SistemaGestion\obj\Debug\net6.0\SistemaGestion.csproj.AssemblyReference.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Proyecto_Final\SistemaGestion\obj\Debug\net6.0\SistemaGestion.Properties.Resources.resources
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Proyecto_Final\SistemaGestion\obj\Debug\net6.0\SistemaGestion.csproj.GenerateResource.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Proyecto_Final\SistemaGestion\obj\Debug\net6.0\SistemaGestion.GeneratedMSBuildEditorConfig.editorconfig
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Proyecto_Final\SistemaGestion\obj\Debug\net6.0\SistemaGestion.AssemblyInfoInputs.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Proyecto_Final\SistemaGestion\obj\Debug\net6.0\SistemaGestion.AssemblyInfo.cs
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Proyecto_Final\SistemaGestion\obj\Debug\net6.0\SistemaGestion.csproj.CoreCompileInputs.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Proyecto_Final\SistemaGestion\obj\Debug\net6.0\SistemaGestion.MvcApplicationPartsAssemblyInfo.cs
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Proyecto_Final\SistemaGestion\obj\Debug\net6.0\SistemaGestion.MvcApplicationPartsAssemblyInfo.cache
+C:\00 - Repositorios\Practica-CSharp-CoderHouse\Proyecto_Final\SistemaGestion\obj\Debug\net6.0\SistemaGestion.sourcelink.json
