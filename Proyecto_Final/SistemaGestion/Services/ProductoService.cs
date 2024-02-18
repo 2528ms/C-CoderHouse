@@ -4,14 +4,19 @@ using Microsoft.EntityFrameworkCore;
 
 namespace SistemaGestion.Services
 {
-    public class ProductoData
+    public class ProductoService
     {
+        private readonly DataBaseContext context;
+
+        public ProductoService(DataBaseContext DbContext)
+        {
+            this.context = DbContext;
+        }
+
         public Producto ObtenerProductoPorId(int id)
         {
             try
             {
-                using (DataBaseContext context = new DataBaseContext())
-                {
                     Producto producto = context.Producto.Where(p => p.Id == id).FirstOrDefault();
 
                     if (producto == null)
@@ -19,7 +24,22 @@ namespace SistemaGestion.Services
                         throw new Exception("No se pudo obtener ningun Producto con ese Id");
                     }
                     return producto;
-                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al obtener el Producto", ex);
+            }
+        }
+
+        public List<Producto> ObtenerProductoPorUsuario(int idUsuario)
+        {
+            try
+            {               
+                var producto = context.Producto.Where(p => p.IdUsuario == idUsuario).ToList() ??
+                                    throw new Exception("No se pudo obtener ningun Producto con ese Id");
+ 
+                return producto;
+                
             }
             catch (Exception ex)
             {
@@ -31,12 +51,9 @@ namespace SistemaGestion.Services
         {
             try
             {
-                using (DataBaseContext context = new DataBaseContext())
-                {
                     List<Producto> productos = context.Producto.ToList();
 
                     return productos;
-                }
             }
             catch (Exception ex)
             {
@@ -48,12 +65,9 @@ namespace SistemaGestion.Services
         {
             try
             {
-                using (DataBaseContext context = new DataBaseContext())
-                {
                     context.Producto.Add(nuevoProducto);
                     context.SaveChanges();
                     return true;
-                }
             }
             catch (Exception ex)
             {
@@ -68,8 +82,6 @@ namespace SistemaGestion.Services
                 Producto productoBuscado = ObtenerProductoPorId(id);
                 if (productoBuscado is not null)
                 {
-                    using (DataBaseContext context = new DataBaseContext())
-                    {
                         productoBuscado.Descripciones = producto.Descripciones;
                         productoBuscado.Costo = producto.Costo;
                         productoBuscado.PrecioVenta = producto.PrecioVenta;
@@ -79,7 +91,6 @@ namespace SistemaGestion.Services
                         context.Producto.Update(productoBuscado);
                         context.SaveChanges();
                         return true;
-                    }
                 }
                 return false;
             }
@@ -93,8 +104,6 @@ namespace SistemaGestion.Services
         {
             try
             {
-                using (DataBaseContext context = new DataBaseContext())
-                {
                     Producto productoAEliminar = context.Producto.Include(p => p.ProductoVendidos).Where(p => p.Id == id).FirstOrDefault();
 
                     if (productoAEliminar is not null)
@@ -103,7 +112,6 @@ namespace SistemaGestion.Services
                         context.SaveChanges();
                         return true;
                     }
-                }
                 return false;
             }
             catch (Exception ex)

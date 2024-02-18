@@ -5,16 +5,20 @@ namespace SistemaGestion.Database
 {
     public partial class DataBaseContext : DbContext
     {
+        public DataBaseContext() 
+        { 
+        
+        }
+
+        public DataBaseContext(DbContextOptions<DataBaseContext> options) : base(options) 
+        {        
+        }
+
         public virtual DbSet<Producto> Producto { get; set; } = null!;
         public virtual DbSet<ProductoVendido> ProductoVendidos { get; set; } = null!;
         public virtual DbSet<Usuario> Usuario { get; set; } = null!;
         public virtual DbSet<Venta> Venta { get; set; } = null!;
 
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(@"Server=localhost\SQLEXPRESS;Database=CoderHouse;Trusted_Connection=True;");
-        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Producto>(entity =>

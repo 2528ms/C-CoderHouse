@@ -4,22 +4,52 @@ using Microsoft.EntityFrameworkCore;
 
 namespace SistemaGestion.Services
 {
-    public class UsuarioData
+    public class UsuarioService
     {
+        private readonly DataBaseContext context;
+
+        public UsuarioService(DataBaseContext DbContext)
+        {
+            this.context = DbContext;
+        }
+
         public Usuario ObtenerUsuarioPorId(int id)
         {
             try
             {
-                using (DataBaseContext context = new DataBaseContext())
-                {
-                    Usuario usuario = context.Usuario.Where(u => u.Id == id).FirstOrDefault();
+                Usuario usuario = context.Usuario.Where(u => u.Id == id).FirstOrDefault() ?? 
+                                  throw new Exception("No se pudo obtener ningun Usuario con ese Id");
 
-                    if (usuario == null)
-                    {
-                        throw new Exception("No se pudo obtener ningun Usuario con ese Id");
-                    }
-                    return usuario;
-                }
+                return usuario;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al obtener el usuario", ex);
+            }
+        }
+
+        public Usuario ObtenerUsuarioPorNombreUsuario(string nombreUsurario)
+        {
+            try
+            {   // ?? "operador de asignación nula" si la primera expresion es nula ejecuta o asigna la segunda expresion
+                Usuario usuario = context.Usuario.Where(u => u.NombreUsuario == nombreUsurario).FirstOrDefault() ??
+                                                throw new Exception("No se pudo obtener  Usuario con ese nombre de usuario");
+                return usuario;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al obtener el usuario", ex);
+            }
+        }
+
+        public Usuario ObtenerUsuario(string nombreUsuario, string passwork)
+        {
+            try
+            {
+                Usuario usuario = context.Usuario.Where(u => u.NombreUsuario == nombreUsuario && u.Contraseña == passwork).FirstOrDefault() ??
+                                  throw new Exception("No se pudo obtener ningun Usuario con ese Id");
+
+                return usuario;
             }
             catch (Exception ex)
             {
@@ -31,12 +61,9 @@ namespace SistemaGestion.Services
         {
             try
             {
-                using (DataBaseContext context = new DataBaseContext())
-                {
-                    List<Usuario> usuarios = context.Usuario.ToList();
+                List<Usuario> usuarios = context.Usuario.ToList();
 
-                    return usuarios;
-                }
+                return usuarios;                
             }
             catch (Exception ex)
             {

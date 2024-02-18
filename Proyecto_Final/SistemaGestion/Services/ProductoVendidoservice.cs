@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace SistemaGestion.Services
 {
-    public class ProductoVendidoData
+    public class ProductoVendidoservice
     {
         public static ProductoVendido ObtenerProductoVendidoporId(int id)
         {

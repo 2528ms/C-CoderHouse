@@ -3,7 +3,7 @@ using SistemaGestion.Models;
 
 namespace SistemaGestion.Services
 {
-    public class VentaData
+    public class VentaService
     {
         public Venta ObtenerVentaPorId(int id)
         {
