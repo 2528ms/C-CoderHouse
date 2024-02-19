@@ -1,25 +1,43 @@
-﻿using SistemaGestion.Database;
+﻿using AutoMapper;
+using SistemaGestion.Database;
+using SistemaGestion.DataTransfer;
 using SistemaGestion.Models;
 
 namespace SistemaGestion.Services
 {
     public class VentaService
     {
+        private readonly DataBaseContext context;
+        private readonly IMapper _mapper;
+
+        public VentaService(DataBaseContext DbContext, IMapper mapper)
+        {
+            this.context = DbContext;
+            _mapper = mapper;
+        }
+
         public Venta ObtenerVentaPorId(int id)
         {
             try
             {
-                using (DataBaseContext context = new DataBaseContext())
-                {
-                    Venta venta = context.Venta.Where(p => p.Id == id).FirstOrDefault();
+                Venta venta = context.Venta.Where(p => p.Id == id).FirstOrDefault() ??
+                                throw new Exception("No se pudo obtener ninguna Venta con ese Id");
 
-                    if (venta == null)
-                    {
-                        throw new Exception("No se pudo obtener ninguna Venta con ese Id");
-                    }
+                return venta;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al obtener una Venta", ex);
+            }
+        }
 
-                    return venta;
-                }
+        public List<Venta> ObtenerVentaPorIdUsuario(int id)
+        {
+            try
+            {
+                 List<Venta> ventas = context.Venta.Where(p => p.IdUsuario == id).ToList();
+
+                return ventas;
             }
             catch (Exception ex)
             {
@@ -31,12 +49,10 @@ namespace SistemaGestion.Services
         {
             try
             {
-                using (DataBaseContext context = new DataBaseContext())
-                {
-                    List<Venta> ventas = context.Venta.ToList();
+                List<Venta> ventas = context.Venta.ToList();
 
-                    return ventas;
-                }
+                return ventas;
+
             }
             catch (Exception ex)
             {
@@ -44,16 +60,14 @@ namespace SistemaGestion.Services
             }
         }
 
-        public bool CrearVenta(Venta nuevaVenta)
+        public bool CrearVenta(VentaData nuevaVenta)
         {
             try
             {
-                using (DataBaseContext context = new DataBaseContext())
-                {
-                    context.Venta.Add(nuevaVenta);
-                    context.SaveChanges();
-                    return true;
-                }
+                Venta result = this._mapper.Map<Venta>(nuevaVenta);
+                context.Venta.Add(result);
+                context.SaveChanges();
+                return true;
             }
             catch (Exception ex)
             {
@@ -68,15 +82,12 @@ namespace SistemaGestion.Services
                 Venta ventaBuscada = ObtenerVentaPorId(id);
                 if (ventaBuscada is not null)
                 {
-                    using (DataBaseContext context = new DataBaseContext())
-                    {
-                        ventaBuscada.Comentarios = venta.Comentarios;
-                        ventaBuscada.IdUsuario = venta.IdUsuario;
+                    ventaBuscada.Comentarios = venta.Comentarios;
+                    ventaBuscada.IdUsuario = venta.IdUsuario;
 
-                        context.Venta.Update(ventaBuscada);
-                        context.SaveChanges();
-                        return true;
-                    }
+                    context.Venta.Update(ventaBuscada);
+                    context.SaveChanges();
+                    return true;
                 }
                 return false;
             }
@@ -90,16 +101,13 @@ namespace SistemaGestion.Services
         {
             try
             {
-                using (DataBaseContext context = new DataBaseContext())
-                {
-                    Venta VentaEliminar = context.Venta.Where(p => p.Id == id).FirstOrDefault();
+                Venta VentaEliminar = this.ObtenerVentaPorId(id);        
 
-                    if (VentaEliminar is not null)
-                    {
-                        context.Venta.Remove(VentaEliminar);
-                        context.SaveChanges();
-                        return true;
-                    }
+                if (VentaEliminar is not null)
+                {
+                    context.Venta.Remove(VentaEliminar);
+                    context.SaveChanges();
+                    return true;
                 }
                 return false;
             }

@@ -1,16 +1,20 @@
 ﻿using SistemaGestion.Database;
 using SistemaGestion.Models;
 using Microsoft.EntityFrameworkCore;
+using SistemaGestion.DataTransfer;
+using AutoMapper;
 
 namespace SistemaGestion.Services
 {
     public class UsuarioService
     {
         private readonly DataBaseContext context;
+        private readonly IMapper mapper;
 
-        public UsuarioService(DataBaseContext DbContext)
+        public UsuarioService(DataBaseContext DbContext, IMapper mapper)
         {
             this.context = DbContext;
+            this.mapper = mapper;
         }
 
         public Usuario ObtenerUsuarioPorId(int id)
@@ -71,16 +75,14 @@ namespace SistemaGestion.Services
             }
         }
 
-        public bool CrearUsuario(Usuario nuevoUsuario)
+        public bool CrearUsuario(UsuarioData nuevoUsuario)
         {
             try
             {
-                using (DataBaseContext context = new DataBaseContext())
-                {
-                    context.Usuario.Add(nuevoUsuario);
-                    context.SaveChanges();
-                    return true;
-                }
+                Usuario result = this.mapper.Map<Usuario>(nuevoUsuario);
+                context.Usuario.Add(result);
+                context.SaveChanges();
+                return true;
             }
             catch (Exception ex)
             {
@@ -88,25 +90,22 @@ namespace SistemaGestion.Services
             }
         }
 
-        public bool ModificarUsuarioPorId(Usuario usuario, int id)
+        public bool ModificarUsuario(UsuarioData nuevoUsuario)
         {
             try
             {
-                Usuario usuarioBuscado = ObtenerUsuarioPorId(id);
+                Usuario usuarioBuscado = ObtenerUsuarioPorId(nuevoUsuario.UsuarioId);
                 if (usuarioBuscado is not null)
-                {
-                    using (DataBaseContext context = new DataBaseContext())
-                    {
-                        usuarioBuscado.Nombre = usuario.Nombre;
-                        usuarioBuscado.Apellido = usuario.Apellido;
-                        usuarioBuscado.NombreUsuario = usuario.NombreUsuario;
-                        usuarioBuscado.Contraseña = usuario.Contraseña;
-                        usuarioBuscado.Mail = usuario.Mail;
+                {                 
+                        usuarioBuscado.Nombre = nuevoUsuario.Nombre;
+                        usuarioBuscado.Apellido = nuevoUsuario.Apellido;
+                        usuarioBuscado.NombreUsuario = nuevoUsuario.UserName;
+                        usuarioBuscado.Contraseña = nuevoUsuario.Passwork;
+                        usuarioBuscado.Mail = nuevoUsuario.Email;
 
                         context.Usuario.Update(usuarioBuscado);
                         context.SaveChanges();
                         return true;
-                    }
                 }
                 return false;
             }

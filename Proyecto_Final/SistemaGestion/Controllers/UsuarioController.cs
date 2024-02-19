@@ -42,5 +42,19 @@ namespace SistemaGestion.Controllers
 
             return _mapper.Map<UsuarioData>(result);
         }
+
+        [HttpPost]
+        public IActionResult AgregarNuevoUsuario([FromBody] UsuarioData nuevoUsuario)
+        {
+            return this._usuarioService.CrearUsuario(nuevoUsuario) ? base.Ok(new { mensaje = "Usuario agregado", nuevoUsuario }) :
+                                                                     base.Conflict(new { mensaje = "No se pudo agregar el Usuario" });
+        }
+
+        [HttpPut]
+        public IActionResult ActualizarUsuario([FromBody] UsuarioData nuevoUsuario)
+        {
+            return this._usuarioService.ModificarUsuario(nuevoUsuario) ? base.Ok(new { mensaje = "Usuario actualizado", nuevoUsuario }) :
+                                                                         base.Conflict(new { mensaje = "No se pudo actualizar el Usuario" });
+        }
     }
 }

@@ -1,29 +1,29 @@
 ﻿using SistemaGestion.Database;
 using SistemaGestion.Models;
-using Microsoft.EntityFrameworkCore;
+using SistemaGestion.DataTransfer;
+using AutoMapper;
 
 namespace SistemaGestion.Services
 {
     public class ProductoService
     {
         private readonly DataBaseContext context;
+        private readonly IMapper mapper;
 
-        public ProductoService(DataBaseContext DbContext)
+        public ProductoService(DataBaseContext DbContext, IMapper mapper)
         {
             this.context = DbContext;
+            this.mapper = mapper;
         }
 
         public Producto ObtenerProductoPorId(int id)
         {
             try
             {
-                    Producto producto = context.Producto.Where(p => p.Id == id).FirstOrDefault();
-
-                    if (producto == null)
-                    {
-                        throw new Exception("No se pudo obtener ningun Producto con ese Id");
-                    }
-                    return producto;
+                Producto producto = context.Producto.Where(p => p.Id == id).FirstOrDefault()??
+                                    throw new Exception("No se pudo obtener ningun Producto con ese Id");
+    
+                return producto;
             }
             catch (Exception ex)
             {
@@ -31,7 +31,7 @@ namespace SistemaGestion.Services
             }
         }
 
-        public List<Producto> ObtenerProductoPorUsuario(int idUsuario)
+        public List<Producto> ObtenerProductosPorUsuario(int idUsuario)
         {
             try
             {               
@@ -61,13 +61,13 @@ namespace SistemaGestion.Services
             }
         }
 
-        public bool CrearProducto(Producto nuevoProducto)
+        public bool CrearProducto(ProductoData nuevoProducto)
         {
             try
-            {
-                    context.Producto.Add(nuevoProducto);
-                    context.SaveChanges();
-                    return true;
+            {   var result = mapper.Map<Producto>(nuevoProducto);
+                context.Producto.Add(result);
+                context.SaveChanges();
+                return true;
             }
             catch (Exception ex)
             {
@@ -75,18 +75,18 @@ namespace SistemaGestion.Services
             }
         }
 
-        public bool ModificarProductoPorId(Producto producto, int id)
+        public bool ModificarProducto(ProductoData nuevoProducto)
         {
             try
             {
-                Producto productoBuscado = ObtenerProductoPorId(id);
+                Producto productoBuscado = ObtenerProductoPorId(nuevoProducto.Id);
                 if (productoBuscado is not null)
                 {
-                        productoBuscado.Descripciones = producto.Descripciones;
-                        productoBuscado.Costo = producto.Costo;
-                        productoBuscado.PrecioVenta = producto.PrecioVenta;
-                        productoBuscado.Stock = producto.Stock;
-                        productoBuscado.IdUsuario = producto.IdUsuario;
+                        productoBuscado.Descripciones = nuevoProducto.Descripciones;
+                        productoBuscado.Costo = nuevoProducto.Costo;
+                        productoBuscado.PrecioVenta = nuevoProducto.PrecioVenta;
+                        productoBuscado.Stock = nuevoProducto.Stock;
+                        productoBuscado.IdUsuario = nuevoProducto.IdUsuario;
 
                         context.Producto.Update(productoBuscado);
                         context.SaveChanges();
@@ -100,18 +100,18 @@ namespace SistemaGestion.Services
             }
         }
 
-        public bool EliminarProductoPorId(int id)
+        public bool EliminarProductoPorId(int idProducto)
         {
             try
             {
-                    Producto productoAEliminar = context.Producto.Include(p => p.ProductoVendidos).Where(p => p.Id == id).FirstOrDefault();
+                Producto? productoAEliminar = this.ObtenerProductoPorId(idProducto);
 
-                    if (productoAEliminar is not null)
-                    {
-                        context.Producto.Remove(productoAEliminar);
-                        context.SaveChanges();
-                        return true;
-                    }
+                if (productoAEliminar is not null)
+                {
+                    context.Producto.Remove(productoAEliminar);
+                    context.SaveChanges();
+                    return true;
+                }
                 return false;
             }
             catch (Exception ex)

@@ -1,18 +1,28 @@
 ﻿using SistemaGestion.Database;
 using SistemaGestion.Models;
 using Microsoft.EntityFrameworkCore;
+using AutoMapper;
 
 namespace SistemaGestion.Services
 {
     public class ProductoVendidoservice
     {
-        public static ProductoVendido ObtenerProductoVendidoporId(int id)
+        private readonly DataBaseContext _context;
+        private readonly IMapper _mapper;
+        private readonly ProductoService _productoService;
+
+        public ProductoVendidoservice(DataBaseContext DbContext, IMapper mapper, ProductoService productoService)
+        {
+            this._context = DbContext;
+            this._mapper = mapper;
+            this._productoService = productoService;
+        }
+
+        public ProductoVendido ObtenerProductoVendidoporId(int id)
         {
             try
             {
-                using (DataBaseContext context = new DataBaseContext())
-                {
-                    ProductoVendido productoVendido = context.ProductoVendidos.Where(p => p.Id == id).FirstOrDefault();
+                    ProductoVendido? productoVendido = this._context.ProductoVendidos.Where(p => p.Id == id).FirstOrDefault();
 
                     if (productoVendido == null)
                     {
@@ -20,7 +30,6 @@ namespace SistemaGestion.Services
                     }
 
                     return productoVendido;
-                }
             }
             catch (Exception ex)
             {
@@ -32,12 +41,9 @@ namespace SistemaGestion.Services
         {
             try
             {
-                using (DataBaseContext context = new DataBaseContext())
-                {
-                    List<ProductoVendido> productosVendidos = context.ProductoVendidos.ToList();
+                    List<ProductoVendido> productosVendidos = this._context.ProductoVendidos.ToList();
 
                     return productosVendidos;
-                }
             }
             catch (Exception ex)
             {
@@ -49,12 +55,9 @@ namespace SistemaGestion.Services
         {
             try
             {
-                using (DataBaseContext context = new DataBaseContext())
-                {
-                    context.ProductoVendidos.Add(nuevoProductoVendido);
-                    context.SaveChanges();
-                    return true;
-                }
+                this._context.ProductoVendidos.Add(nuevoProductoVendido);
+                this._context.SaveChanges();
+                return true;
             }
             catch (Exception ex)
             {
@@ -69,16 +72,13 @@ namespace SistemaGestion.Services
                 ProductoVendido productoVendidoBuscado = ObtenerProductoVendidoporId(id);
                 if (productoVendidoBuscado is not null)
                 {
-                    using (DataBaseContext context = new DataBaseContext())
-                    {
                         productoVendidoBuscado.Stock = productonModificado.Stock;
                         productoVendidoBuscado.IdProducto = productonModificado.IdProducto;
                         productoVendidoBuscado.IdVenta = productonModificado.IdVenta;
 
-                        context.ProductoVendidos.Update(productoVendidoBuscado);
-                        context.SaveChanges();
+                        this._context.ProductoVendidos.Update(productoVendidoBuscado);
+                        this._context.SaveChanges();
                         return true;
-                    }
                 }
                 return false;
             }
@@ -92,19 +92,16 @@ namespace SistemaGestion.Services
         {
             try
             {
-                using (DataBaseContext context = new DataBaseContext())
-                {
-                    ProductoVendido productoVendidoAEliminar = context.ProductoVendidos
-                                    .Include(x => x.IdVentaNavigation)
-                                    .Include(x => x.IdProductoNavigation)
-                                    .Where(p => p.Id == id).FirstOrDefault();
+                ProductoVendido? productoVendidoAEliminar = this._context.ProductoVendidos
+                                .Include(x => x.IdVentaNavigation)
+                                .Include(x => x.IdProductoNavigation)
+                                .Where(p => p.Id == id).FirstOrDefault();
 
-                    if (productoVendidoAEliminar is not null)
-                    {
-                        context.ProductoVendidos.Remove(productoVendidoAEliminar);
-                        context.SaveChanges();
-                        return true;
-                    }
+                if (productoVendidoAEliminar is not null)
+                {
+                    this._context.ProductoVendidos.Remove(productoVendidoAEliminar);
+                    this._context.SaveChanges();
+                    return true;
                 }
                 return false;
             }
@@ -112,6 +109,18 @@ namespace SistemaGestion.Services
             {
                 throw new Exception("Ocurrio un error al eliminar un ProductoVendido", ex);
             }
+        }
+
+        public List<ProductoVendido> obtenerProductoVendidosPorUsuario(int idUsuario)
+        {
+            List<ProductoVendido> productosVendidos = this.ListarProductoVendidos();
+            //Obtenemos todos los productos del usuario y luego solo filtramos los Ids de cada producto
+            var productosPorUsuario = this._productoService.ObtenerProductosPorUsuario(idUsuario)
+                                                            .Select(producto => producto.Id).ToList();
+            //Filtramos todos los productos ventidos por los ids obtenidos en el paso anterios
+            var productosVendidosFiltrados = productosVendidos.Where(pv => productosPorUsuario.Contains(pv.IdProducto)).ToList();
+
+            return productosVendidosFiltrados;
         }
     }
 }
