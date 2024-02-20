@@ -35,8 +35,20 @@ namespace SistemaGestion
             // Registrar AutoMapper en el contenedor de servicios
             builder.Services.AddSingleton(mapper);
 
+            // configuramos las politicas para que otro servidor externo pueda realizarle las request a esta api
+            builder.Services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(policy =>
+                {
+                    policy.AllowAnyMethod();
+                    policy.AllowAnyHeader();
+                    policy.AllowAnyOrigin();
+                });
+            });
+
             var app = builder.Build();
 
+            app.UseCors();
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
@@ -50,7 +62,6 @@ namespace SistemaGestion
 
 
             app.MapControllers();
-
             app.Run();
         }
     }
