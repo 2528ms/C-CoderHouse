@@ -119,5 +119,21 @@ namespace SistemaGestion.Services
                 throw new Exception("Ocurrio un error al eliminar un Producto", ex);
             }
         }
+
+        public void ActualizarStockProducto(ProductoData nuevoProducto)
+        {
+            Producto productoBuscado = ObtenerProductoPorId(nuevoProducto.Id);
+            if (productoBuscado is not null)
+            {
+                productoBuscado.Descripciones = nuevoProducto.Descripciones;
+                productoBuscado.Costo = nuevoProducto.Costo;
+                productoBuscado.PrecioVenta = nuevoProducto.PrecioVenta;
+                productoBuscado.Stock = nuevoProducto.Stock;
+                productoBuscado.IdUsuario = nuevoProducto.IdUsuario;
+
+                context.Producto.Update(productoBuscado);
+                context.SaveChanges();
+            }
+        }
     }
 }

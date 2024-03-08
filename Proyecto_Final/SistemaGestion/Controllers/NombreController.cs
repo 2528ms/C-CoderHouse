@@ -10,7 +10,7 @@ namespace SistemaGestion.Controllers
         [HttpGet]
         public string obtenerNombreLocal()
         {
-            return "Sosa Mariano";
+            return "API Sistema de Gestión";
         }
     }
 }

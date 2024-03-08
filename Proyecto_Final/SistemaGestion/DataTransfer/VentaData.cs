@@ -2,7 +2,7 @@
 {
     public class VentaData
     {
-        public int VentaId { get; set; }
+        public int id { get; set; }
 
         public string? Comentario { get; set; }
 

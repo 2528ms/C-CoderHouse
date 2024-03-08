@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using SistemaGestion.DataTransfer;
 using SistemaGestion.Services;
+using System.Collections.Generic;
 
 namespace SistemaGestion.Controllers
 {
@@ -26,10 +27,10 @@ namespace SistemaGestion.Controllers
             return _mapper.Map<IEnumerable<VentaData>>(ventas);
         }
 
-        [HttpPost]
-        public IActionResult AgregarNuevaVenta([FromBody] VentaData nuevaVenta)
+        [HttpPost("{idUsuario}")]
+        public IActionResult AgregarNuevaVenta(int idUsuario, [FromBody] List<ProductoData> productos)
         {
-            return this._ventaService.CrearVenta(nuevaVenta) ? base.Ok(new { mensaje = "Venta agregado", nuevaVenta }) :
+            return this._ventaService.CrearVenta(idUsuario, productos) ? base.Ok(new { mensaje = "Venta creada exitosamente"}) :
                                                                base.Conflict(new { mensaje = "No se pudo agregar la Venta" });
         }
     }

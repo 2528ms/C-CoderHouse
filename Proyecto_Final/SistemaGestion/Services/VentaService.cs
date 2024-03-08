@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using SistemaGestion.Database;
 using SistemaGestion.DataTransfer;
 using SistemaGestion.Models;
@@ -9,11 +10,15 @@ namespace SistemaGestion.Services
     {
         private readonly DataBaseContext context;
         private readonly IMapper _mapper;
+        private readonly ProductoVendidoservice _productoVendidoService;
+        private readonly ProductoService _productoService;
 
-        public VentaService(DataBaseContext DbContext, IMapper mapper)
+        public VentaService(DataBaseContext DbContext, IMapper mapper, ProductoVendidoservice productoVendidoService, ProductoService productoService)
         {
             this.context = DbContext;
             _mapper = mapper;
+            this._productoVendidoService = productoVendidoService;
+            this._productoService = productoService;
         }
 
         public Venta ObtenerVentaPorId(int id)
@@ -60,13 +65,21 @@ namespace SistemaGestion.Services
             }
         }
 
-        public bool CrearVenta(VentaData nuevaVenta)
+        public bool CrearVenta(int idUsuario, List<ProductoData> productos)
         {
             try
             {
-                Venta result = this._mapper.Map<Venta>(nuevaVenta);
-                context.Venta.Add(result);
+                Venta venta = new Venta();
+                List<string?> descripciones = productos.Select(x => x.Descripciones).ToList();
+                string comentario = string.Join("-", descripciones);
+                venta.Comentarios = comentario;
+                venta.IdUsuario = idUsuario;
+
+                context.Venta.Add(venta);
                 context.SaveChanges();
+
+                this.cargarProductosVendidos(productos, venta.Id);
+                this.ActualizarStockProductosVendidos(productos);
                 return true;
             }
             catch (Exception ex)
@@ -117,5 +130,26 @@ namespace SistemaGestion.Services
             }
         }
 
+        private void cargarProductosVendidos(List<ProductoData> productos, int idVenta)
+        {
+            foreach (var p in productos)
+            {
+                ProductoVendido productoVendido = new ProductoVendido();
+                productoVendido.IdProducto = p.Id;
+                productoVendido.IdVenta = idVenta;
+                productoVendido.Stock = p.Stock;
+
+                this._productoVendidoService.CrearProductoVendido(productoVendido);
+            }
+        }
+
+        private void ActualizarStockProductosVendidos(List<ProductoData> productos)
+        {
+            productos.ForEach(producto => {
+                ProductoData productoActual = _mapper.Map<ProductoData>(this._productoService.ObtenerProductoPorId(producto.Id)); 
+                productoActual.Stock -= producto.Stock;
+                this._productoService.ActualizarStockProducto(productoActual);            
+            });
+        }
     }
 }

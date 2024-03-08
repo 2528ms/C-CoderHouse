@@ -94,14 +94,14 @@ namespace SistemaGestion.Services
         {
             try
             {
-                Usuario usuarioBuscado = ObtenerUsuarioPorId(nuevoUsuario.UsuarioId);
+                Usuario usuarioBuscado = ObtenerUsuarioPorId(nuevoUsuario.Id);
                 if (usuarioBuscado is not null)
                 {                 
                         usuarioBuscado.Nombre = nuevoUsuario.Nombre;
                         usuarioBuscado.Apellido = nuevoUsuario.Apellido;
-                        usuarioBuscado.NombreUsuario = nuevoUsuario.UserName;
-                        usuarioBuscado.Contraseña = nuevoUsuario.Passwork;
-                        usuarioBuscado.Mail = nuevoUsuario.Email;
+                        usuarioBuscado.NombreUsuario = nuevoUsuario.NombreUsuario;
+                        usuarioBuscado.Contraseña = nuevoUsuario.Contraseña;
+                        usuarioBuscado.Mail = nuevoUsuario.Mail;
 
                         context.Usuario.Update(usuarioBuscado);
                         context.SaveChanges();
